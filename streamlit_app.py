@@ -85,6 +85,7 @@ if st.button("Predict"):
         ]
     )
     stress = np.maximum(stress, 0)
+    plt.style.use('dark_background')
 
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.plot(strain * 100, stress, label="Stress-Strain", color='royalblue')
