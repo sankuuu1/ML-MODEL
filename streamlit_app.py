@@ -10,7 +10,7 @@ from sklearn.multioutput import MultiOutputRegressor
 from sklearn.ensemble import RandomForestRegressor
 
 # Load Data
-stress_strain_df = pd.read_excel("MDSP Dataset.xlsx", sheet_name="Sheet1")
+stress_strain_df = pd.read_excel("Stress_Strain_Pattern_Thickness.xlsx", sheet_name="Sheet1")
 uts_elongation_df = pd.read_excel("UTS_Elongation.xlsx", skiprows=2, usecols="B:E")
 uts_elongation_df.columns = ['Layer_Thickness_mm', 'Pattern', 'UTS_MPa', 'Elongation_percent']
 uts_elongation_df.dropna(inplace=True)
